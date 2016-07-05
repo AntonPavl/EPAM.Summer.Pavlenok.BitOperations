@@ -14,9 +14,6 @@ namespace BitMath
         /// <returns>0 if positive, 1 if negative</returns>
         public static int ComputeSign(int a)
         {
-            var x = Int32.MaxValue;
-            var b = Int32.MinValue;
-            var t = -2;
             return (a>>31) & 1;
         }
         /// <summary>
